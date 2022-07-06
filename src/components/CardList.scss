@@ -1,0 +1,14 @@
+// Assumes there's only one main tag within the application
+.app-card-list {
+    display: grid;
+    grid-gap: 15px;
+
+    @media(min-width: 400px) {
+        grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    }
+
+    @media(min-width: 1400px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+}

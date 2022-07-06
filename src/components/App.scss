@@ -1,0 +1,92 @@
+/****************************/
+/** Base Styles for the App **/
+/****************************/
+
+/**
+* Simple mixin to remove margin and padding
+*/
+@mixin resetSpacings() {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+}
+
+html, body {
+    @include resetSpacings();
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+figure {
+    @include resetSpacings();
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    @include resetSpacings();
+}
+
+$button-bg: #33658A;
+button {
+    display: inline-block;
+    outline: 0 none;
+    border: 0 none;
+    padding: .5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 150ms ease-in, color 150ms ease-in;
+    background-color: $button-bg;
+    color: #fefefe;
+
+    &:hover {
+        background-color: darken($button-bg, 10%);
+        color: #fff;
+    }
+}
+
+main {
+    flex-grow: 1;
+    background-color: #f2f2f2;
+    border: 1px solid #cdcdcd;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+}

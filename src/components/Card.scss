@@ -1,0 +1,84 @@
+
+$header-bg: #465775;
+$header-fg: #f9f9f9;
+$body-bg: #e2e2e2;
+$body-fg: #313131;
+$button-bg: darken($body-bg, 10%);
+$button-fg: #2A2D34;
+
+.app-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: #fcfdfc;
+    color: #333;
+    box-shadow: 1px 2px 2px #aaa;
+
+    &__header, &__body {
+        padding: .9375rem;
+    }
+
+    &__header {
+        text-align: center;
+        display: flex;
+        align-items: center;;
+    }
+
+    &__image {
+
+        img {
+            width: 100%;
+            transition: opacity 350ms ease-in-out;
+        }
+    }
+
+    &:hover &__image img {
+        opacity: .75;
+    }
+
+    &__body {
+        ul {
+            @media(min-width: 768px) {
+                font-size: .75rem;
+            }
+
+            > li {
+                margin: 3.5px 0;
+            }
+        }
+
+        // flex: 1 0 auto;
+        // display: flex;
+        // align-items: center;
+        // padding: .5rem;
+
+        // &__info {
+        //     flex-grow: 1;
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: center;
+
+        // }
+    }
+
+    &__footer {
+        margin-top: auto;
+        padding: .3125rem;
+        text-align: center;
+
+        // button:hover {
+        //     background-color:
+        // }
+
+        // > button {
+        //     margin-left: auto;
+        //     background-color: $button-bg;
+        //     color: $button-fg;
+
+        //     &:hover {
+        //         background-color: darken($button-bg, 10%);
+        //         color: darken($button-fg, 10%);
+        //     }
+        // }
+    }
+}

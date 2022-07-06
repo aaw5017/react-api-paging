@@ -1,0 +1,25 @@
+$selected-color: #33658A;
+
+.app-pager {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+
+    button {
+        margin-right: 10px;
+        box-shadow: 0 2px 4px 0 #aaa;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.is-selected {
+            border: 1px solid $selected-color;
+            background: #fff;
+            color: $selected-color;
+        }
+
+    }
+
+}
