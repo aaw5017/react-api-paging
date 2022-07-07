@@ -7,3 +7,4 @@
     - Organize overall sass file structure in a more understandable way
 5. Add a global error handler to the application
 6. Fancier transitions for app loading and component loading states
+7. Possibly place each component inside its own directory to reduce clutter inside the `/components` directory
