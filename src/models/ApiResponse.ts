@@ -14,7 +14,7 @@ export interface ApiResponse {
  * are limiting this to only key/vals we are concerned with.
  */
 export interface BreedInfo {
-    id: string;
+    id: number;
     name: string;
     origin?: string;
     bred_for?: string;
