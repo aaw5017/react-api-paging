@@ -22,7 +22,7 @@ function App() {
 
     useEffect(() => {
 
-        setIsLoading(true);
+        isReady && setIsLoading(true);
 
         const getDoggoData: any = async () => {
             const doggoData = await CardService.get({ limit: 10, page: pageNum });
