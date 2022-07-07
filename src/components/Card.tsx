@@ -1,5 +1,10 @@
+// libs
 import { SyntheticEvent } from 'react';
+
+// models
 import { CardModel } from '../models/CardModel';
+
+// styles
 import './Card.scss';
 
 interface CardProps {

@@ -1,13 +1,14 @@
 // Componens
 import Card from './Card';
 
-// Styles
+// models
 import { CardModel } from '../models/CardModel';
+
+// styles
 import './CardList.scss';
 
 interface CardListProps {
     cardList: CardModel[]
-
 }
 
 function CardList({ cardList }: CardListProps) {

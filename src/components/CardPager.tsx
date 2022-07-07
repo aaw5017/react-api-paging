@@ -1,3 +1,4 @@
+// styles
 import './CardPager.scss';
 
 interface CardPagerProps {
